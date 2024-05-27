@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/user_account?useUnicode=true&characterEncoding=utf-8
+    username: your name
+    password: your password
+  mail:
+    host: smtp.qq.com
+    username: your username
+    password: your password
+    port: 465
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            enable: true
+          starttls:
+            enable: true
+          socketFactory:
+            class: javax.net.ssl.SSLSocketFactory
+  data:
+    redis:
+      database: 0
+      host: localhost
+      port: 6379
